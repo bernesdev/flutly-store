@@ -81,6 +81,13 @@ class AppScope extends StatelessWidget {
                   type: SnackBarType.info,
                 );
               }
+
+              if (state is CartClearFailure) {
+                context.showAppSnackBar(
+                  message: state.exception.message,
+                  type: SnackBarType.error,
+                );
+              }
             },
           ),
         ],

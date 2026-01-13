@@ -150,10 +150,10 @@ class CartCubit extends Cubit<CartState> {
     final response = await _cartRepository.clearCart().run();
 
     response.fold(
-      (_) {
-        // TODO: handle exception if needed
-        _cartCache = CartCache();
-        emit(const CartEmpty());
+      (exception) {
+        emit(
+          CartClearFailure(exception: exception, cart: _cartCache.cart),
+        );
       },
       (_) {
         _cartCache = CartCache();

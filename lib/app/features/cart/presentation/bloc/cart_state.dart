@@ -64,3 +64,13 @@ final class CartUpdateFailure extends CartState {
   final int productId;
   final int uiID;
 }
+
+final class CartClearFailure extends CartState {
+  const CartClearFailure({
+    required this.exception,
+    required this.cart,
+  });
+
+  final AppException exception;
+  final Cart cart;
+}

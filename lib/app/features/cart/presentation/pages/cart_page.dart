@@ -26,7 +26,7 @@ class CartPage extends StatelessWidget {
           CartLoaded(:final cart) ||
           CartUpdated(:final cart) => CartLoadedWidget(cart: cart),
 
-          // Fallback for CartUpdating and CartUpdateFailure
+          // Fallback for CartClearFailure, CartUpdating and CartUpdateFailure
           _ => const SizedBox.shrink(),
         };
       },
