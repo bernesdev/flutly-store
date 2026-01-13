@@ -30,7 +30,7 @@ class CartRemoteDataSourceImpl implements CartRemoteDataSource {
 
       final doc = await ref.get();
 
-      if (!doc.exists) {
+      if (!doc.exists || doc.data()?['cart'] == null) {
         return const None();
       }
 
