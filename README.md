@@ -33,7 +33,7 @@ The project is structured to reflect real-world mobile applications, prioritizin
 
 - Authentication (email/password and social sign-in)
 - Tab-based main navigation
-- Home integrated with Sanity (CRM/content)
+- Home integrated with Sanity (content)
 - Product catalog and search
 - Product details
 - Shopping cart
