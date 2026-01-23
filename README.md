@@ -162,6 +162,8 @@ genhtml coverage/lcov.info -o coverage/html
 
 Open `index.html` in the coverage directory to view the report.
 
+<img width="1816" height="300" alt="image" src="https://github.com/user-attachments/assets/b3c7e8f6-db89-4ce1-9bcf-f0b00a7e69cb" />
+
 ## 🎨 Assets & Localization
 
 - Assets: `assets/icons`, `assets/images`, `assets/splash`
