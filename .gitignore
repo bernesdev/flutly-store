@@ -64,7 +64,10 @@ ios/Flutter/flutter_export_environment.sh
 /ios/Runner/crashlytics-build.properties
 
 # Environment config files
-env*.json
+env.prod.json
+env.dev.json
+env.staging.json
+env.local.json
 
 # Release files
 android/key.properties
