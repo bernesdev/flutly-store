@@ -2,10 +2,21 @@
 
 # Flutly Store
 
+![Tests](https://github.com/GabrielPeresBernes/flutly-store/actions/workflows/tests.yml/badge.svg)
+![Flutter](https://img.shields.io/badge/Flutter-3.35.7-blue)
+
+
 Flutly is a **demo e-commerce mobile application** built with Flutter to showcase clean architecture, feature-based organization, and production-ready patterns.
 
 > ⚠️ This app is for **demonstration purposes only**.  
 > No real payments, orders, or transactions are processed.
+
+<!-- TODO: Add demo media -->
+<!-- 
+[PLACEHOLDER]
+- Add 1 short GIF showing the happy path (browse → add to cart → checkout)
+- Add 3–6 screenshots (Home, Product Details, Cart, Checkout, Profile)
+-->
 
 ## ✨ Overview
 
@@ -30,11 +41,11 @@ The project is structured to reflect real-world mobile applications, prioritizin
 - User profile
 - Bug report flow
 
-## 🧪 How to Test (Store Builds)
+## 🧪 Try the App (Closed Test)
 
-You can install the Flutly app directly from the stores on your device, follow the step-by-step instructions here:
+You can install the Flutly app directly on your device via the closed test builds.
 
-👉 [Flutly: Closed test page](https://slow-bath-005.notion.site/Flutly-Store-Closed-Test-2e762a6865a680a79b23d1d05e153c4d?pvs=74)
+👉 [Flutly – Closed Test Page](https://slow-bath-005.notion.site/Flutly-Store-Closed-Test-2e762a6865a680a79b23d1d05e153c4d?pvs=74)
 
 ## 🧱 Tech Stack
 
@@ -56,7 +67,7 @@ You can install the Flutly app directly from the stores on your device, follow t
 
 ### Sanity
 
-- Used as CRM/content source for the Home experience
+- Sanity CMS used as a content source for the Home experience
 
 ## 🏗 Architecture
 
@@ -144,25 +155,36 @@ flutter run --dart-define-from-file=env.prod.json
 flutter test
 ```
 
-These tests ensure that individual units of the code work as expected.
-
 ### Test Coverage
 
-To evaluate the test coverage:
+To generate coverage data:
 
 ```bash
 flutter test --coverage
 ```
 
-Then, generate a coverage report:
+Generate an HTML report:
 
 ```bash
 genhtml coverage/lcov.info -o coverage/html
 ```
 
-Open `index.html` in the coverage directory to view the report.
+> Note: `genhtml` is part of `lcov`.
+> - macOS: `brew install lcov`
+> - Ubuntu/Debian: `sudo apt-get install lcov`
+
+Open `index.html` inside the `coverage/html` directory to view the report.
 
 <img width="1816" height="300" alt="image" src="https://github.com/user-attachments/assets/b3c7e8f6-db89-4ce1-9bcf-f0b00a7e69cb" />
+
+The project prioritizes test coverage for:
+
+- Domain logic and use cases
+- State management (BLoC/Cubit)
+- Repositories and data sources
+- Critical UI states and flows
+
+This approach provides strong confidence in business behavior while avoiding brittle tests in areas such as routing and dependency wiring, which are exercised indirectly.
 
 ## 🎨 Assets & Localization
 
