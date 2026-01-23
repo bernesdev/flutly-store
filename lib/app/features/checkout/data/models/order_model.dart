@@ -18,7 +18,7 @@ class OrderModel {
 
   factory OrderModel.fromJson(Map<String, dynamic> json) {
     return OrderModel(
-      id: json['id'] as String,
+      id: JsonParser.parseString(json['id']),
       address: AddressModel.fromJson(json['address'] as Map<String, dynamic>),
       shipping: ShippingModel.fromJson(
         json['shipping'] as Map<String, dynamic>,
