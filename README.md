@@ -3,7 +3,7 @@
 # Flutly Store
 
 ![Tests](https://github.com/GabrielPeresBernes/flutly-store/actions/workflows/tests.yml/badge.svg)
-![Flutter](https://img.shields.io/badge/Flutter-3.35.7-blue)
+![Flutter](https://img.shields.io/badge/Flutter-3.35-blue)
 ![Architecture](https://img.shields.io/badge/Architecture-Clean-green)
 
 Flutly is a **demo e-commerce mobile application** built with Flutter to showcase clean architecture, feature-based organization, and production-ready patterns.
@@ -158,7 +158,7 @@ To make this portfolio project easy to run for recruiters and developers, I impl
 
 #### Environment variables
 
-Environment values are provided via `--dart-define`. The project includes an env.example.json file preconfigured to run without backend friction.
+Environment values are provided via `--dart-define`. The project includes an `env.example.json` file preconfigured to run without any backend setup.
 
 #### ⚡ Demo Mode (Recommended)
 
@@ -182,7 +182,7 @@ To enable real backend integration:
 
 1. Open `env.prod.json` and set:
 
-```bash
+```json
 "USE_FIREBASE": true
 ```
 
@@ -234,6 +234,8 @@ genhtml coverage/lcov.info -o coverage/html
 > Note: `genhtml` is part of `lcov`.
 > - macOS: `brew install lcov`
 > - Ubuntu/Debian: `sudo apt-get install lcov`
+
+Current line coverage: <b>80%+</b>
 
 <img width="1640" height="300" alt="Test Coverage" src="https://github.com/user-attachments/assets/5a6c03d7-d5db-4141-94b2-744ad534dde5" />
 
