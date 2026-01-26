@@ -10,10 +10,7 @@ Flutly is a **demo e-commerce mobile application** built with Flutter to showcas
 
 > ⚠️ This app is for **demonstration purposes only**. No real payments, orders, or transactions are processed.
 
-<!-- 
-[PLACEHOLDER]
-- Add 1 short GIF showing the happy path (browse → add to cart → checkout)
--->
+<img src="https://github.com/user-attachments/assets/65cd2024-98fa-4c15-bd00-dd32fa1ccef7" alt="Flutly Store" height="400">
 
 ## 📑 Table of Contents
 
@@ -21,7 +18,7 @@ Flutly is a **demo e-commerce mobile application** built with Flutter to showcas
 - [Screenshots](#-screenshots)
 - [Key Features](#-key-features)
 - [Architecture](#-architecture)
-- [Technical Decisions](#-technical-decisions--challenges)
+- [Technical Decisions](#-technical-decisions)
 - [Getting Started](#-getting-started)
 - [Testing](#-running-the-tests)
 - [Author](#-author)
@@ -41,10 +38,11 @@ The project is structured to reflect real-world mobile applications, prioritizin
 
 <table style="border-style: none; border-color: transparent;">
   <tr>
-    <td><img src="https://via.placeholder.com/200x400?text=Home" alt="Home Screen" width="200" /></td>
-    <td><img src="https://via.placeholder.com/200x400?text=Details" alt="Product Details" width="200" /></td>
-    <td><img src="https://via.placeholder.com/200x400?text=Cart" alt="Shopping Cart" width="200" /></td>
-    <td><img src="https://via.placeholder.com/200x400?text=Profile" alt="User Profile" width="200" /></td>
+    <td><img src="https://github.com/user-attachments/assets/e807ba05-51d6-402d-ba6e-847a2939c340" alt="Home Screen" width="200" /></td>
+    <td><img src="https://github.com/user-attachments/assets/52d3ed2d-7f68-4d4f-bc86-0dc764148b37" alt="Product Details" width="200" /></td>
+    <td><img src="https://github.com/user-attachments/assets/5577c8d1-0803-452a-ad49-730922bcea93" alt="Search Screen" width="200" /></td>
+    <td><img src="https://github.com/user-attachments/assets/8375d303-8896-4473-a35b-fae3a06731ed" alt="Shopping Cart" width="200" /></td>
+    <td><img src="https://github.com/user-attachments/assets/375760fa-8bc4-475f-91d5-1d3690d4478a" alt="Shopping Cart" width="200" /></td>
   </tr>
 </table>
 
@@ -250,6 +248,7 @@ Gabriel Peres Bernes
 Mobile Software Engineer — Flutter Specialist
 
 LinkedIn: [https://www.linkedin.com/in/gabriel-peres-bernes/](https://www.linkedin.com/in/gabriel-peres-bernes/)
+
 Email: bernes.dev@gmail.com
 
 ## 📄 License & Disclaimer
