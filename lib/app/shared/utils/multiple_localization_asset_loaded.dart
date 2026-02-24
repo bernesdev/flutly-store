@@ -10,11 +10,10 @@ class MultipleLocalizationAssetLoader extends AssetLoader {
   const MultipleLocalizationAssetLoader();
 
   Future<List<String>> _listJsonAssetsInFolder(String folder) async {
-    final manifestContent = await rootBundle.loadString('AssetManifest.json');
+    final manifest = await AssetManifest.loadFromAssetBundle(rootBundle);
+    final assets = manifest.listAssets();
 
-    final manifestMap = jsonDecode(manifestContent) as Map<String, dynamic>;
-
-    return manifestMap.keys
+    return assets
         .where((path) => path.startsWith(folder) && path.endsWith('.json'))
         .toList();
   }

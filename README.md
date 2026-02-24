@@ -3,7 +3,7 @@
 # Flutly Store
 
 ![Tests](https://github.com/GabrielPeresBernes/flutly-store/actions/workflows/tests.yml/badge.svg)
-![Flutter](https://img.shields.io/badge/Flutter-3.35-blue)
+![Flutter](https://img.shields.io/badge/Flutter-3.41-blue)
 ![Architecture](https://img.shields.io/badge/Architecture-Clean-green)
 
 Flutly is a **demo e-commerce mobile application** built with Flutter to showcase clean architecture, feature-based organization, and production-ready patterns.
