@@ -247,9 +247,10 @@ Current line coverage: <b>80%+</b>
 ## 👨‍💻 Author
 
 Gabriel Peres Bernes 
+
 Mobile Software Engineer — Flutter Specialist
 
-LinkedIn: [https://www.linkedin.com/in/gabriel-peres-bernes/](https://www.linkedin.com/in/gabriel-peres-bernes/)
+LinkedIn: [https://www.linkedin.com/in/bernesdev/](https://www.linkedin.com/in/bernesdev/)
 
 Email: bernes.dev@gmail.com
 
