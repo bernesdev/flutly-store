@@ -23,24 +23,33 @@ class AppBottomNavigationBar extends StatelessWidget {
   Widget build(BuildContext context) {
     final cartCubit = context.read<CartCubit>();
 
-    return Padding(
+    return Container(
       padding: EdgeInsets.only(
+        top: 10,
         left: 15,
         right: 15,
         bottom: Platform.isAndroid
             ? MediaQuery.of(context).padding.bottom + 10
-            : MediaQuery.of(context).padding.bottom,
+            : 30,
+      ),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [Colors.transparent, Colors.black.withValues(alpha: 0.2)],
+          stops: [0.0, 1.0],
+        ),
       ),
       child: PhysicalModel(
         color: Colors.transparent,
         borderRadius: BorderRadius.circular(24),
         clipBehavior: Clip.antiAlias,
         shadowColor: Colors.black.withValues(alpha: 0.2),
-        elevation: 12,
+        elevation: 8,
         child: BackdropFilter(
           filter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
           child: Container(
-            height: 56,
+            height: 58,
             decoration: BoxDecoration(
               color: Colors.white.withValues(alpha: 0.85),
               borderRadius: BorderRadius.circular(24),
