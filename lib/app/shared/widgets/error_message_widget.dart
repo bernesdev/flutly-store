@@ -78,7 +78,6 @@ class ErrorMessageWidget extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(
               top: compact ? 20 : 50,
-              bottom: 130,
             ),
             child: AppOutlinedButtonWidget(
               label: 'Try Again',

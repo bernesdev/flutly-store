@@ -10,26 +10,31 @@ class RecommendationLoadingWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            ShimmerPlaceHolderWidget(
-              color: AppColors.gray200.withValues(alpha: .2),
-              width: 120,
-              height: 14,
-            ),
-            ShimmerPlaceHolderWidget(
-              color: AppColors.gray200.withValues(alpha: .2),
-              width: 50,
-              height: 14,
-            ),
-          ],
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 24),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              ShimmerPlaceHolderWidget(
+                color: AppColors.gray200.withValues(alpha: .2),
+                width: 120,
+                height: 14,
+              ),
+              ShimmerPlaceHolderWidget(
+                color: AppColors.gray200.withValues(alpha: .2),
+                width: 50,
+                height: 14,
+              ),
+            ],
+          ),
         ),
         const SizedBox(height: 25),
         SizedBox(
           height: 232,
           child: ListView.separated(
+            physics: const NeverScrollableScrollPhysics(),
             scrollDirection: Axis.horizontal,
+            padding: const EdgeInsets.symmetric(horizontal: 24),
             itemBuilder: (context, index) {
               return ShimmerPlaceHolderWidget(
                 color: AppColors.gray200.withValues(alpha: .2),
@@ -42,7 +47,6 @@ class RecommendationLoadingWidget extends StatelessWidget {
             itemCount: 3,
           ),
         ),
-        const SizedBox(height: 100),
       ],
     );
   }

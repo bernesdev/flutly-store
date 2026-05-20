@@ -60,7 +60,7 @@ class _CartEmptyWidgetState extends State<CartEmptyWidget> {
                 child: IntrinsicHeight(
                   child: Column(
                     children: [
-                      const Expanded(child: SizedBox(height: 30)),
+                      const Expanded(child: SizedBox(height: 20)),
                       const Padding(
                         padding: EdgeInsets.only(right: 4),
                         child: AppIconWidget.svgAsset('box_empty', size: 120),
@@ -84,11 +84,9 @@ class _CartEmptyWidgetState extends State<CartEmptyWidget> {
                       const Spacer(),
                       Container(
                         width: double.infinity,
-                        padding: EdgeInsets.fromLTRB(
-                          24,
-                          28,
-                          24,
-                          context.bottomBarOffset,
+                        padding: EdgeInsets.only(
+                          top: 28,
+                          bottom: context.bottomBarOffset,
                         ),
                         decoration: const BoxDecoration(
                           color: AppColors.gray400,
@@ -109,10 +107,12 @@ class _CartEmptyWidgetState extends State<CartEmptyWidget> {
                                   CartPopularProductsLoading() ||
                                   CartPopularProductsInitial() =>
                                     const PopularProductsLoadingWidget(),
+
                                   CartPopularProductsLoaded(:final products) =>
                                     PopularProductsLoadedWidget(
                                       products: products,
                                     ),
+
                                   CartPopularProductsFailure(
                                     :final exception,
                                   ) =>

@@ -20,10 +20,13 @@ class PopularProductsLoadedWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        ProductListTitleWidget(
-          title: 'cart.popular.title'.tr(),
-          onTap: () => context.router.push(
-            const CatalogRoute(),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 24),
+          child: ProductListTitleWidget(
+            title: 'cart.popular.title'.tr(),
+            onTap: () => context.router.push(
+              const CatalogRoute(),
+            ),
           ),
         ),
         const SizedBox(height: 20),
@@ -31,8 +34,8 @@ class PopularProductsLoadedWidget extends StatelessWidget {
           child: SizedBox(
             height: 232,
             child: ListView.separated(
-              padding: EdgeInsets.zero,
               scrollDirection: Axis.horizontal,
+              padding: const EdgeInsets.symmetric(horizontal: 24),
               itemCount: products.length,
               separatorBuilder: (context, index) => const SizedBox(width: 16),
               itemBuilder: (context, index) {

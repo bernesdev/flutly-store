@@ -19,10 +19,13 @@ class RecommendationLoadedWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        ProductListTitleWidget(
-          title: 'product.sections.recommendations'.tr(),
-          onTap: () => context.router.push(
-            const CatalogRoute(),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 24),
+          child: ProductListTitleWidget(
+            title: 'product.sections.recommendations'.tr(),
+            onTap: () => context.router.push(
+              const CatalogRoute(),
+            ),
           ),
         ),
         const SizedBox(height: 20),
@@ -30,6 +33,7 @@ class RecommendationLoadedWidget extends StatelessWidget {
           height: 232,
           child: ListView.separated(
             scrollDirection: Axis.horizontal,
+            padding: const EdgeInsets.symmetric(horizontal: 24),
             itemBuilder: (context, index) {
               final product = products[index];
               return MediumProductCardWidget(

@@ -17,13 +17,16 @@ class RecommendationFailureWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ErrorMessageWidget(
-      error: exception,
-      compact: true,
-      onRetry: () =>
-          context.read<ProductRecommendationCubit>().getRecommendations(
-            forProductId: productId,
-          ),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 24),
+      child: ErrorMessageWidget(
+        error: exception,
+        compact: true,
+        onRetry: () =>
+            context.read<ProductRecommendationCubit>().getRecommendations(
+              forProductId: productId,
+            ),
+      ),
     );
   }
 }

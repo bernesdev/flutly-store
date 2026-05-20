@@ -15,10 +15,13 @@ class PopularProductsFailureWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ErrorMessageWidget(
-      error: exception,
-      compact: true,
-      onRetry: () => context.read<CartPopularProductsCubit>().getProducts(),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 24),
+      child: ErrorMessageWidget(
+        error: exception,
+        compact: true,
+        onRetry: () => context.read<CartPopularProductsCubit>().getProducts(),
+      ),
     );
   }
 }

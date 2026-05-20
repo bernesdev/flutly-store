@@ -17,12 +17,15 @@ class AppReactiveTextFieldWidget extends StatelessWidget {
     this.onSuffixPressed,
     this.hintText,
     this.controller,
+    this.focusNode,
     this.obscureText = false,
     this.validationMessages,
     this.keyboardType = TextInputType.text,
     this.readOnly = false,
     this.textInputAction,
     this.maxLines = 1,
+    this.onSubmitted,
+    this.onEditingComplete,
   }) : assert(
          formControlName != null || formControl != null,
          'Either formControlName or formControl must be provided',
@@ -35,6 +38,7 @@ class AppReactiveTextFieldWidget extends StatelessWidget {
   final VoidCallback? onSuffixPressed;
   final String? hintText;
   final TextEditingController? controller;
+  final FocusNode? focusNode;
   final TextInputType keyboardType;
   final String? formControlName;
   final FormControl<String>? formControl;
@@ -43,6 +47,8 @@ class AppReactiveTextFieldWidget extends StatelessWidget {
   final bool readOnly;
   final TextInputAction? textInputAction;
   final int maxLines;
+  final void Function(FormControl<String>)? onSubmitted;
+  final void Function(FormControl<String>)? onEditingComplete;
 
   @override
   Widget build(BuildContext context) {
@@ -65,6 +71,7 @@ class AppReactiveTextFieldWidget extends StatelessWidget {
           ReactiveTextField<String>(
             maxLines: maxLines,
             controller: controller,
+            focusNode: focusNode,
             obscureText: obscureText,
             formControlName: formControlName,
             formControl: formControl,
@@ -72,6 +79,8 @@ class AppReactiveTextFieldWidget extends StatelessWidget {
             validationMessages: validationMessages,
             readOnly: readOnly,
             textInputAction: textInputAction,
+            onSubmitted: onSubmitted,
+            onEditingComplete: onEditingComplete,
             style: context.bodyMedium.copyWith(
               color: isDisabled ? AppColors.gray200 : AppColors.black,
             ),

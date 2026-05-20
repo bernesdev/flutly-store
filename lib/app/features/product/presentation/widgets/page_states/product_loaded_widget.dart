@@ -129,7 +129,7 @@ class ProductLoadedWidget extends StatelessWidget {
           const SizedBox(height: 40),
           Container(
             width: double.infinity,
-            padding: EdgeInsets.fromLTRB(24, 28, 24, context.bottomBarOffset),
+            padding: EdgeInsets.only(top: 28, bottom: context.bottomBarOffset),
             decoration: const BoxDecoration(color: AppColors.gray400),
             child:
                 BlocBuilder<
