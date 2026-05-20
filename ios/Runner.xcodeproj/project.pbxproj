@@ -15,6 +15,7 @@
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
+		C06185052FB9039F00D27415 /* FlutterKeyboardFlickerFix.m in Sources */ = {isa = PBXBuildFile; fileRef = C06185042FB9039F00D27415 /* FlutterKeyboardFlickerFix.m */; };
 		CAFBB7435EAFEEF5D2992996 /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8F277357614A7161DFC0A9 /* Pods_Runner.framework */; };
 		E2C4BCD6F34C444CC3233B5B /* Pods_RunnerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0DC1397B247C4813DE3D05 /* Pods_RunnerTests.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C02F63812F150E2600FA2AE6 /* Runner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Runner.entitlements; sourceTree = "<group>"; };
+		C06185042FB9039F00D27415 /* FlutterKeyboardFlickerFix.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlutterKeyboardFlickerFix.m; sourceTree = "<group>"; };
 		DD30163A721A0C3B171B1FF4 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
 		E331D5D85B20E82298B0CBD7 /* Pods-RunnerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunnerTests.debug.xcconfig"; path = "Target Support Files/Pods-RunnerTests/Pods-RunnerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EC0DC1397B247C4813DE3D05 /* Pods_RunnerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RunnerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +149,7 @@
 		97C146F01CF9000F007C117D /* Runner */ = {
 			isa = PBXGroup;
 			children = (
+				C06185042FB9039F00D27415 /* FlutterKeyboardFlickerFix.m */,
 				C02F63812F150E2600FA2AE6 /* Runner.entitlements */,
 				97C146FA1CF9000F007C117D /* Main.storyboard */,
 				97C146FD1CF9000F007C117D /* Assets.xcassets */,
@@ -441,6 +444,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
+				C06185052FB9039F00D27415 /* FlutterKeyboardFlickerFix.m in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
