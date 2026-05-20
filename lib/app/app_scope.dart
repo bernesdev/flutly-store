@@ -10,7 +10,6 @@ import 'features/profile/profile.dart';
 import 'shared/bloc/app_cubit.dart';
 import 'shared/constants/bottom_navigator_tabs.dart';
 import 'shared/extensions/show_app_snack_bar_extension.dart';
-import 'shared/widgets/demo_banner_widget.dart';
 import 'shared/widgets/keyboard_dismissible_widget.dart';
 
 class AppScope extends StatelessWidget {
@@ -91,10 +90,8 @@ class AppScope extends StatelessWidget {
             },
           ),
         ],
-        child: DemoBannerWidget(
-          child: KeyboardDismissibleWidget(
-            child: Center(child: child),
-          ),
+        child: KeyboardDismissibleWidget(
+          child: Center(child: child),
         ),
       ),
     );
